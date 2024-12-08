@@ -76,8 +76,14 @@ function makeCodeRender(renderBlocksPackage) {
         }
     }, false);
 
+    console.log("hogehoge: " + targetUrl);
+
     var pres = document.querySelectorAll('div[data-lang="blocks"] .code-frame code');
+    console.log(pres);
     Array.prototype.forEach.call(pres, function (pre) {
+        console.log("hogehogeRenderPre()");
+        console.log(pre);
         renderPre(pre);
     })
+
 }
